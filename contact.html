@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Mahathir Mahi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f7f2ef;
+      font-family: 'Futura PT', sans-serif;
+      color: #3d3531;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .background-logo {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 40%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .background-logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 70px;
+      padding: 80px;
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .back-arrow {
+      font-size: 28px;
+      position: absolute;
+      top: 20px;
+      left: 60px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      z-index: 5;
+    }
+
+    .back-arrow:hover {
+      color: #d5b29c;
+    }
+
+    .social-box, .form-box {
+      width: 45%;
+      min-width: 300px;
+      padding: 40px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social-box {
+      background-color: #d5b29c;
+      align-items: center;
+    }
+
+    .form-box {
+      background-color: rgba(79, 72, 67, 0.8);
+      color: #e6d0be;
+    }
+
+    .social-box h2, .form-box h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      font-size: 35px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+    }
+
+    .social-icons a img {
+      width: 70px;
+      height: 70px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.1);
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 25px;
+    }
+
+    .contact-info a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #5b4a42;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      font-size: 18px;
+    }
+
+    input, textarea {
+      background-color: transparent;
+      border: 1px solid #e6d0be;
+      font-size: 25px;
+      padding: 8px 4px;
+      color: #e6d0be;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+      padding: 8px;
+    }
+
+    button {
+      width: fit-content;
+      padding: 8px 16px;
+      background-color: transparent;
+      color: #e6d0be;
+      font-size: 16px;
+      border: 1px solid #d5b29c;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d5b29c;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+        gap: 10px;
+        position: relative;
+      }
+
+      .background-logo {
+        width: 70%;
+      }
+
+      .social-icons a img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .social-icons {
+        gap: 20px;
+      }
+
+      .contact-info p {
+        font-size: 20px;
+      }
+
+      .social-box, .form-box {
+        width: 100%;
+      }
+
+      .form-box {
+        margin-top: 30px;
+      }
+
+      .back-arrow {
+        top: 10px;
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-logo">
+    <img src="icons/BG-Logo.svg" alt="Background Logo" />
+  </div>
+
+  <div class="back-arrow" onclick="window.location.href='index.html'">&larr;</div>
+
+  <div class="container">
+    <div class="social-box">
+      <h2>SOCIALS</h2>
+      <div class="social-icons">
+        <a href="https://www.behance.net/mahathir_mahi" target="_blank"><img src="Icons/behance-icon.svg" alt="Behance" /></a>
+        <a href="https://www.linkedin.com/in/mahi-mahathir-717b33360/" target="_blank"><img src="Icons/linkedin-icon.svg" alt="LinkedIn" /></a>
+        <a href="https://www.instagram.com/_mahathir_mahi/" target="_blank"><img src="Icons/instagram-icon.svg" alt="Instagram" /></a>
+        <a href="https://www.facebook.com/havetotrymahi" target="_blank"><img src="Icons/facebook-icon.svg" alt="Facebook" /></a>
+        <a href="https://wa.me/qr/VXGU2WBND6JUJ1" target="_blank"><img src="Icons/whatsapp-icon.svg" alt="WhatsApp" /></a>
+      </div>
+      <div class="contact-info">
+        <p><strong>MOBILE:</strong><br />
+          <a href="tel:+8801829012424">+8801829012424</a><br />
+          <a href="tel:+8801609630105">+8801609630105</a>
+        </p>
+        <p><strong>EMAIL:</strong><br />
+          <a href="mailto:mdmahibiswash@gmail.com">mdmahibiswash@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <h2>INQUIRY</h2>
+      <form action="https://formspree.io/f/mdkgnnwk" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" />
+
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
